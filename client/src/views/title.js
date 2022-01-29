@@ -7,8 +7,7 @@ import React, { useEffect, useState } from 'react';
                 <span className='text-blue-300 text-8xl'>V</span>
                 <span className='text-green-300 text-7xl'>e</span>
             </div>
-                <h3 className='text-center text-2xl'>Find a nearest gass and electric station near you!</h3>
-             </div>
+        </div>
          
      )
  }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import MainPanel from '../components/main_panel';
 import ScatterMap from '../components/scattermap';
 import FinalPanel from '../components/final_panel';
