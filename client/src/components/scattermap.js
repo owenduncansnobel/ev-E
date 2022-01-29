@@ -9,13 +9,7 @@ const ELECTRIC_COLOR = [255, 0, 128];
 
 const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
-
-
-// Source data CSV
-
-
 const DATA_URL = elec_data
-
 
 const INITIAL_VIEW_STATE = {
   longitude: -79.347015,
@@ -25,13 +19,8 @@ const INITIAL_VIEW_STATE = {
   bearing: 0
 };
 
-export default function App({
-  data = DATA_URL,
-  radius = 6,
-  gasColor = GAS_COLOR,
-  electricColor = ELECTRIC_COLOR,
-  mapStyle = 'https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json'
-}) {
+const ScatterMap = ({data = DATA_URL, radius = 6, gasColor = GAS_COLOR, electricColor = ELECTRIC_COLOR, mapStyle = 'https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json',height,width}
+) => {
   const layers = [
     new ScatterplotLayer({
       id: 'scatter-plot',
@@ -49,8 +38,9 @@ export default function App({
   ];
 
   return (
-    <DeckGL layers={layers} initialViewState={INITIAL_VIEW_STATE} controller={true}>
-      <StaticMap width="20vw" height="20vh" reuseMaps mapStyle={mapStyle} mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
+    <DeckGL width={width ? width : '50vw'} height={height} layers={layers} initialViewState={INITIAL_VIEW_STATE} controller={true}>
+      <StaticMap width={width} height={height} reuseMaps mapStyle={mapStyle} mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
     </DeckGL>
   );
 }
+export default ScatterMap
