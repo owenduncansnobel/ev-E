@@ -5,7 +5,7 @@ import searchBar from "./components/search";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-zinc-900">
       <Navbar />
       <Title />
       <searchBar />
