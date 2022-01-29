@@ -2,6 +2,8 @@ import React from 'react';
 import MainPanel from '../components/main_panel';
 import ScatterMap from '../components/scattermap';
 import FinalPanel from '../components/final_panel';
+import Contact from '../components/contact';
+
 const Home = () => {
 
     return (
@@ -10,6 +12,8 @@ const Home = () => {
                 
                 <MainPanel />
                 <ScatterMap width='80vw' height='80vh' />
+                
+                <Contact />
                 <FinalPanel />
             </div>
         </div>
