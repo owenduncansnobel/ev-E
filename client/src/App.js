@@ -1,10 +1,11 @@
 import Navbar from "./components/navbar";
-import ScatterMap from "./components/scattermap";
+import Home from './views/home';
+
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <ScatterMap width={500} height={400} />
+      <Home />
     </div>
   );
 }

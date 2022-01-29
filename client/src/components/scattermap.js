@@ -19,7 +19,7 @@ const INITIAL_VIEW_STATE = {
   bearing: 0
 };
 
-const ScatterMap = ({data = DATA_URL, radius = 6, gasColor = GAS_COLOR, electricColor = ELECTRIC_COLOR, mapStyle = 'https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json',height,width}
+const ScatterMap = ({data = DATA_URL, radius = 6, gasColor = GAS_COLOR, electricColor = ELECTRIC_COLOR, mapStyle = 'https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json',height='100vh',width='100vw'}
 ) => {
   const layers = [
     new ScatterplotLayer({
@@ -37,8 +37,12 @@ const ScatterMap = ({data = DATA_URL, radius = 6, gasColor = GAS_COLOR, electric
     })
   ];
 
+  const deckStyle = {
+      position: 'relative'
+  };
+  
   return (
-    <DeckGL width={width ? width : '50vw'} height={height} layers={layers} initialViewState={INITIAL_VIEW_STATE} controller={true}>
+    <DeckGL width={width} height={height} layers={layers} style={deckStyle} initialViewState={INITIAL_VIEW_STATE} controller={true} >
       <StaticMap width={width} height={height} reuseMaps mapStyle={mapStyle} mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
     </DeckGL>
   );
