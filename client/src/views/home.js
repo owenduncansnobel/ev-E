@@ -5,8 +5,9 @@ const Home = () => {
 
     return (
         <div className='flex justify-center'>
-            workign
-            <ScatterMap className='justify-center' width={500} />
+            <div className='w-4/5 h-4/5'>
+                <ScatterMap width='80vw' height='80vh'/>
+            </div>
         </div>
     )
 }
