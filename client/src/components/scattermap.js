@@ -4,8 +4,8 @@ import DeckGL from '@deck.gl/react';
 import {ScatterplotLayer} from '@deck.gl/layers';
 import elec_data from './geotab.json';
 
-const GAS_COLOR = [147, 197, 253]
-const ELECTRIC_COLOR = [134, 239, 172];
+const GAS_COLOR = [134, 239, 172];
+const ELECTRIC_COLOR = [147, 197, 253];
 
 const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
