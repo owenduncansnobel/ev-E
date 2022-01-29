@@ -4,12 +4,12 @@ import DeckGL from '@deck.gl/react';
 import {ScatterplotLayer} from '@deck.gl/layers';
 import elec_data from './geotab.json';
 
-const GAS_COLOR = [147, 197, 253]
+const GAS_COLOR = [216, 180, 254]
 const ELECTRIC_COLOR = [134, 239, 172];
 
 const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
-const DATA_URL = elec_data
+const DATA_URL = elec_data;
 
 
 
@@ -53,11 +53,11 @@ const [initialViewState, setInitialViewState] = useState({
       radiusScale: radius,
       radiusMinPixels: 1.2,
       getPosition: d => [d[0], d[1]],
-      getFillColor: d => d[2] === 0 ? gasColor : electricColor,
+      getFillColor: d => d[2] === 0 ? electricColor : gasColor,
       getRadius: 2,
       cluster: true,
       updateTriggers: {
-        getFillColor: [gasColor, electricColor]
+        getFillColor: [gasColor,electricColor]
       }
     })
   ];
