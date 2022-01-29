@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {StaticMap} from 'react-map-gl';
+import {StaticMap, _MapContext as MapContext, NavigationControl} from 'react-map-gl';
 import DeckGL from '@deck.gl/react';
 import {ScatterplotLayer} from '@deck.gl/layers';
 import elec_data from './geotab.json';
@@ -63,12 +63,13 @@ const [initialViewState, setInitialViewState] = useState({
   ];
 
   const deckStyle = {
-      position: 'relative'
+      position: 'relative',
   };
   
   return (
-    <DeckGL width={width} height={height} layers={layers} initialViewState={initialViewState} controller={true} style={deckStyle}>
+    <DeckGL width={width} height={height} layers={layers} initialViewState={initialViewState} controller={true} style={deckStyle} ContextProvider={MapContext.Provider}>
       <StaticMap width={width} height={height} reuseMaps mapStyle={mapStyle} mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
+      <NavigationControl />
     </DeckGL>
   );
 }
