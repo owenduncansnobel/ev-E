@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="container mx-auto px-6 py-3  ">
             <div className="flex text-center mx-auto justify-between">
                 <div className="pl-3 text-xl font-bold text-gray-500 md:text-2xl hover:text-gray-800 dark:hover:text-gray-800 ">
-                    ev-E
+                    eV-e
                 </div>
 
                 <div className="flex justify-between flex-col md:flex-row md:mx-6">
