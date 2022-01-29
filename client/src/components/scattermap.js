@@ -40,8 +40,8 @@ useEffect(() => {
 
 const [initialViewState, setInitialViewState] = useState({
     longitude: -79.347015,
-    latitude: 43.6532,
-    zoom: 12,
+    latitude: 55.6532,
+    zoom: 3,
     pitch: 10,
     bearing: 0
     });
