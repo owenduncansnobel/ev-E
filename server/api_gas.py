@@ -13,9 +13,9 @@ db = SQLAlchemy(app)
 class Gas(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
-    latitude = db.Column(db.Integer)
-    longitude = db.Column(db.Integer)
     type = db.Column(db.Boolean)
+    latitude = db.Column(db.Float)
+    longitude = db.Column(db.Float)    
 
 # Create data abstraction layer
 class GasSchema(Schema):
@@ -27,9 +27,9 @@ class GasSchema(Schema):
 
     id = fields.Integer()
     name = fields.Str(required=True)
-    latitude = fields.Integer(load_only=True)
-    longitude = fields.Integer(load_only=True)
     type = fields.Boolean(load_only=True)
+    latitude = fields.Float(load_only=True)
+    longitude = fields.Float(load_only=True)
 
 # Create resource managers and endpoints
 class GasMany(ResourceList):
