@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="flex text-center mx-auto justify-between">
                 <div className="text-center text-2xl font-bold text-gray-800 md:text-2xl hover:text-gray-800 dark:hover:text-gray-800 drop-shadow-2xl">
                     <span className='text-green-300'>e</span> 
-                    <span className='text-blue-300'>V</span>
+                    <span className='text-purple-300'>V</span>
                     <span className='text-green-300'>e</span>
                 </div>
 

@@ -31,14 +31,14 @@ const MainPanel = () => {
         <div className="mx-auto pt-20 md:pl-20">
             <div className='text-right'>
                 <div className='inline-block text-left'>
-                    <h1 className='text-4xl font-bold text-gray-100'>Currently, the number of <span className='text-blue-300'>Gas</span> stations far out weighs the number of <span className='text-green-300'>Electric charging</span> stations</h1>
+                    <h1 className='text-4xl font-bold text-gray-100'>Currently, the number of <span className='text-purple-300'>Gas</span> stations far out weighs the number of <span className='text-green-300'>Electric charging</span> stations</h1>
                 </div>
             </div>
         </div>
 
         <div className="mx-auto pt-20 md:pl-20">
             <h1> 
-                <span className='text-8xl text-blue-300 font-thin'>11405</span> 
+                <span className='text-8xl text-purple-300 font-thin'>11405</span> 
                 <span className='text-gray-100'> vs </span> 
                 <span className='text-4xl text-green-300 font-thin'>6687</span>
             </h1>
