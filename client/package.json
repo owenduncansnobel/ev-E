@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@deck.gl/core": "^8.6.7",
+    "@deck.gl/layers": "^8.6.7",
+    "@deck.gl/react": "^8.6.7",
+    "@loaders.gl/core": "^3.1.7",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-map-gl": "^6.1.19",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
