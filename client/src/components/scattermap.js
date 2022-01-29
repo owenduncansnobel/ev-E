@@ -50,8 +50,7 @@ export default function App({
 
   return (
     <DeckGL layers={layers} initialViewState={INITIAL_VIEW_STATE} controller={true}>
-        {console.log(MAPBOX_ACCESS_TOKEN)}
-      <StaticMap reuseMaps mapStyle={mapStyle} preventStyleDiffing={true} mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
+      <StaticMap width="20vw" height="20vh" reuseMaps mapStyle={mapStyle} mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
     </DeckGL>
   );
 }
