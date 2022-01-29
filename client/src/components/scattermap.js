@@ -4,8 +4,8 @@ import DeckGL from '@deck.gl/react';
 import {ScatterplotLayer} from '@deck.gl/layers';
 import elec_data from './geotab.json';
 
-const GAS_COLOR = [0, 128, 255];
-const ELECTRIC_COLOR = [255, 0, 128];
+const GAS_COLOR = [147, 197, 253]
+const ELECTRIC_COLOR = [134, 239, 172];
 
 const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
@@ -24,7 +24,7 @@ const ScatterMap = ({
 }) => {
 
 useEffect(() => {
-    if (!navigator.geolocation) {
+  if (!navigator.geolocation) {
     } else {
         navigator.geolocation.getCurrentPosition((position) => {
             setInitialViewState({
@@ -35,7 +35,7 @@ useEffect(() => {
                 bearing: 0
                 })
         }, () => {})
-    }
+    } 
     }, [])
 
 const [initialViewState, setInitialViewState] = useState({
