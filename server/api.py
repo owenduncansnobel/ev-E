@@ -33,7 +33,14 @@ def api():
        "lat:": i["latitude"],
        "type:": 0,
        })
-
+    for i in evdata["fuel_stations"]:
+        
+        result.append({"id": i["id"],
+        "city": i["city"],
+        "long:": i["longitude"],
+       "lat:": i["latitude"],
+       "type:": 1,
+       })
     return jsonify(result), 200
 
 
@@ -54,7 +61,7 @@ def jsonfiles(filename):
 
 # read in json data using function above
 evdata = jsonfiles('electricity.json')
-
+gasdata = jsonfiles("ignition-results.json")
 
 with open("apikey.txt") as f: 
     api_key = f.readline()
