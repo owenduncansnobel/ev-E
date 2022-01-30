@@ -1,28 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import fire from '../images/fire-dynamic-gradient.png';
-const Contact = () => {
+const Contact = ({location}) => {
 
 
 const [localRep, setLocalRep] = useState({
-    formattedUrl: 'Test Data :)',
-    snippet: 'Test Data :)',
-    title: 'Test Title',
-    displayLink: 'Test link'
+    formattedUrl: 'https://montreal.ca/en/contact-city',
+    snippet: 'Please call 311 at any time if a dangerous situation requires an immediate response from public works, such as: Significant accumulations of water in the ...',
+    title: 'Contact the city',
+    displayLink: 'montreal.ca'
 });
 
     useEffect(async () => {
-        if (!navigator.geolocation) {
-          } else {
-              console.log('working in contact')
-              navigator.geolocation.getCurrentPosition(async (position) => {
-                //let response = await fetch('')
-                //response = await response.json()
-                //setLocalRep(response.items[0])
-              }, () => {
 
-              })
-          } 
-          }, [])
+        //let response = await fetch('')
+        //response = await response.json()
+        //setLocalRep(response.items[0])
+
+    }, [])
 
     return (
     <>
@@ -60,8 +54,8 @@ const [localRep, setLocalRep] = useState({
                 </div>
             </div>
 
-            <div className="mx-auto pt-20">
-                <div className='text-right'>
+            <div className="mx-auto pt-20 text-right" >
+                <div className='text-left'>
                     <h1 className='text-4xl font-bold text-gray-100 h-20 m-2'>
                         {localRep.title}
                         <a target='_blank' href={localRep.formattedUrl} className='text-green-300 block'>{localRep.displayLink}</a>

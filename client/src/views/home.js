@@ -13,7 +13,7 @@ const Home = () => {
                 
                 <MainPanel />
                 <ScatterMap width='80vw' height='80vh' />
-                <Contact />
+
                 <Description />
                 <FinalPanel />
             </div>
