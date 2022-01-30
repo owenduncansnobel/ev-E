@@ -31,7 +31,7 @@ useEffect(() => {
             setInitialViewState({
                 longitude: position.coords.longitude,
                 latitude: position.coords.latitude,
-                zoom: 12,
+                zoom: 10,
                 pitch: 10,
                 bearing: 0
                 })
