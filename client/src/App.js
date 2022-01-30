@@ -1,8 +1,7 @@
 import Navbar from "./components/navbar";
 import Home from './views/home';
 import Title from './views/title';
-import searchBar from "./components/search";
-
+import Description from "./views/description";
 function App() {
   return (
     <div className="App bg-zinc-900">
@@ -10,6 +9,7 @@ function App() {
       <Title />
       <searchBar />
       <Home />
+      <Description />
     </div>
   );
 }
