@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-function Description() {
+import React from 'react';
+const Description = () => {
     return (
         <div className='text-left flex pt-10 pb-10 justify-center'>
             <div className='w-4/5 h-4/5 '>
@@ -10,7 +10,7 @@ function Description() {
 
                 <div className='font-bold text-gray-800 md:text-2xl hover:text-gray-800 dark:hover:text-gray-800 drop-shadow-2xl'>
 
-                    <h2 className='text-4xl text-green-300 pt-5'>Benefits of havingf an EV</h2>
+                    <h2 className='text-4xl text-green-300 pt-5'>Benefits of having an EV</h2>
 
                     <ol className='font-bold text-purple-300 pt-10 text-3xl'>
                         <li>1. Save on fuel costs:
@@ -29,12 +29,10 @@ function Description() {
                         </li>
                     </ol>
 
-
                 </div>
 
             </div>
         </div>
     )
 }
-
 export default Description;

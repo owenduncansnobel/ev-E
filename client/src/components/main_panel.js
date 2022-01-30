@@ -10,12 +10,12 @@ const MainPanel = () => {
     return (
 <>
     {/* First row */}
-    <div className="grid sm:p-10 pb-10 lg:grid-cols-2">
+    <div className="grid sm:pt-10 lg:grid-cols-2">
         <div className="">
             <img className="object-cover" src={chat} />
         </div>
         
-        <div className="mx-auto pt-40 md:pl-20">
+        <div className="mx-auto pt-10 md:pl-20">
             <div className='text-right'>
                 <div className='inline-block text-left'>
                     <h1 className='text-4xl font-bold text-gray-100'>Canada has stated that all New light-duty cars and passenger trucks are to be zero-emission by</h1>
@@ -26,12 +26,12 @@ const MainPanel = () => {
         </div>
     </div>
 
-    {/* Third row */}
+    {/* Second row */}
     <div className="grid sm:p-10 pb-20 lg:grid-cols-2"> 
         <div className="mx-auto pt-20 md:pl-20">
             <div className='text-right'>
                 <div className='inline-block text-left'>
-                    <h1 className='text-4xl font-bold text-gray-100'>Currently, the number of <span className='text-purple-300'>Gas</span> stations far out weighs the number of <span className='text-green-300'>Electric charging</span> stations</h1>
+                    <h1 className='text-4xl font-bold text-gray-100'>Currently, the number of <span className='text-purple-300'>Gas</span> stations far out weighs the number of <span className='text-green-300'>Electric charging</span> stations in Canada</h1>
                 </div>
             </div>
         </div>
