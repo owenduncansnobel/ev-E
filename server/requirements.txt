@@ -1,100 +1,15 @@
-alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
-anaconda-client==1.7.2
-anaconda-navigator==1.10.0
-anaconda-project @ file:///tmp/build/80754af9/anaconda-project_1610472525955/work
-anyio @ file:///opt/concourse/worker/volumes/live/64740ac7-3a9c-4fbb-6685-a51c4ff8b4ca/volume/anyio_1617783319350/work/dist
-applaunchservices==0.2.1
-appnope @ file:///opt/concourse/worker/volumes/live/5f13e5b3-5355-4541-5fc3-f08850c73cf9/volume/appnope_1606859448618/work
-appscript @ file:///opt/concourse/worker/volumes/live/82e8b4c7-2416-4d10-509e-144ca79d9b1d/volume/appscript_1611426996703/work
-argh==0.26.2
-argon2-cffi @ file:///opt/concourse/worker/volumes/live/d733ceb5-7f19-407b-7da7-a386540ab855/volume/argon2-cffi_1613037492998/work
-asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
-astroid @ file:///opt/concourse/worker/volumes/live/343a8902-287c-47fb-6db8-923a63364302/volume/astroid_1613500849157/work
-astropy @ file:///opt/concourse/worker/volumes/live/0a514e04-301a-48f9-530f-90365df6420e/volume/astropy_1617745469121/work
-async-generator @ file:///home/ktietz/src/ci/async_generator_1611927993394/work
-atomicwrites==1.4.0
-backports.entry-points-selectable==1.1.0
-backports.functools-lru-cache @ file:///tmp/build/80754af9/backports.functools_lru_cache_1618170165463/work
-backports.shutil-get-terminal-size @ file:///tmp/build/80754af9/backports.shutil_get_terminal_size_1608222128777/work
-backports.tempfile @ file:///home/linux1/recipes/ci/backports.tempfile_1610991236607/work
-backports.weakref==1.0.post1
-beautifulsoup4 @ file:///tmp/build/80754af9/beautifulsoup4_1631874778482/work
-bitarray @ file:///opt/concourse/worker/volumes/live/21dd8f41-3cae-47b4-5fab-684b9b2db14f/volume/bitarray_1618434866960/work
-bkcharts==0.2
-bleach @ file:///tmp/build/80754af9/bleach_1612211392645/work
-bokeh @ file:///opt/concourse/worker/volumes/live/8ca12b65-1f82-4824-7a6b-1a0e478d3ac0/volume/bokeh_1617827437737/work
-boto==2.49.0
-Bottleneck==1.3.2
-branca==0.4.2
-brotlipy==0.7.0
-certifi==2021.10.8
-cffi @ file:///opt/concourse/worker/volumes/live/0ef369cc-6ba0-47e7-75da-208c6400381d/volume/cffi_1613246948181/work
-chardet @ file:///opt/concourse/worker/volumes/live/c798b2ee-88b1-4341-6830-161a92c2399e/volume/chardet_1607706832595/work
-click @ file:///home/linux1/recipes/ci/click_1610990599742/work
-cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1598884132938/work
-clyent==1.2.2
-colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
-conda==4.10.3
-conda-build==3.20.5
-conda-package-handling @ file:///opt/concourse/worker/volumes/live/73497069-9b43-4ad9-50ec-1abb340e14eb/volume/conda-package-handling_1618262140058/work
-conda-verify==3.4.2
-contextlib2==0.6.0.post1
-cryptography @ file:///opt/concourse/worker/volumes/live/c515855a-effc-46df-74dc-542901b701da/volume/cryptography_1616769282442/work
-cycler==0.10.0
-Cython @ file:///opt/concourse/worker/volumes/live/da4db94a-3449-4978-4400-64181f888dab/volume/cython_1618435143829/work
-cytoolz==0.11.0
-dask @ file:///tmp/build/80754af9/dask-core_1617390489108/work
-decorator @ file:///tmp/build/80754af9/decorator_1617916966915/work
-defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
-diff-match-patch @ file:///tmp/build/80754af9/diff-match-patch_1594828741838/work
-distlib==0.3.2
-docutils==0.16
-entrypoints==0.3
-et-xmlfile==1.0.1
-fastcache==1.1.0
-folium==0.12.1
-future==0.18.2
-gmpy2==2.0.8
-h5py==2.10.0
-HeapDict==1.0.1
-jdcal==1.4.1
-json5==0.9.5
-jupyter==1.0.0
-llvmlite==0.36.0
-locket==0.2.1
-mccabe==0.6.1
-mkl-fft==1.3.0
-mkl-random==1.1.1
-mkl-service==2.3.0
-mpmath==1.2.1
-multipledispatch==0.6.0
-navigator-updater==0.2.1
-olefile==0.46
-pandas==1.2.4
-parso==0.7.0
-pathtools==0.1.2
-patsy==0.5.1
-pep8==1.7.1
-pkginfo==1.7.0
-platformdirs==2.3.0
-ply==3.11
-pycosat==0.6.3
-pycurl==7.43.0.6
-pyodbc===4.0.0-unsupported
-pytest==6.2.3
-PyYAML==5.4.1
-pyzmq==20.0.0
-QtPy==1.9.0
-scikit-image==0.18.1
-simplegeneric==0.8.1
-tables==3.6.1
-terminado==0.9.4
-tifffile==2020.10.1
-virtualenv==20.7.2
-webencodings==0.5.1
-widgetsnbextension==3.5.1
-xlwings==0.23.0
-xlwt==1.3.0
-xmltodict==0.12.0
-zict==2.0.0
-zope.event==4.5.0
+black==22.1.0
+click==8.0.3
+colorama==0.4.4
+Flask==2.0.2
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+mypy-extensions==0.4.3
+numpy==1.21.4
+pathspec==0.9.0
+platformdirs==2.4.1
+pycodestyle==2.8.0
+toml==0.10.2
+tomli==2.0.0
+Werkzeug==2.0.2
