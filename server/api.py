@@ -1,13 +1,14 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import json
+import requests 
 
 
 # create the flask app
 app = Flask(__name__)
-@app.route("/api", methods=['GET'])
-
+@app.route("/api", methods=['GET',' POST'])
 
 # main functions 
+
 
 def api():
 
@@ -21,13 +22,21 @@ def api():
     
     """
     result = []
+    
+    
+    
     for i in evdata["fuel_stations"]:
+        
         result.append({"id": i["id"],
         "city": i["city"],
         "long:": i["longitude"],
        "lat:": i["latitude"],
-       "type:": 0 })
+       "type:": 0,
+       })
+
     return jsonify(result), 200
+
+
 
 def jsonfiles(filename):
 
@@ -51,9 +60,15 @@ with open("apikey.txt") as f:
     api_key = f.readline()
     f.close
 
+# making get requests for city council contact information
+
+
+
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
 
 
