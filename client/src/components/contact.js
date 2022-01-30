@@ -49,7 +49,6 @@ const [localRep, setLocalRep] = useState({
                     <div className='text-left'>
                         <h1 className='text-4xl font-bold text-gray-100 h-20 m-2'>Contact</h1>
                         <h1 className='text-4xl font-bold text-gray-100 h-20 m-2'>Description</h1>
-                         {console.log(localRep)}
                     </div>
                 </div>
             </div>
