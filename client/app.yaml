@@ -1,0 +1,12 @@
+runtime: nodejs16
+handlers:
+  # Serve all static files with url ending with a file extension
+  - url: /(.*\..+)$
+    static_files: build/\1
+    upload: build/(.*\..+)$
+  # Catch all handler to index.html
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
+env_variables:
+  MAPBOX_ACCESS_TOKEN: "pk.eyJ1Ijoib2Fkc3RlciIsImEiOiJja3l6eHB5d2Iwbm02Mm9tamFkZ2ZmeDcwIn0.VsJjv3jqmJypZZlDYta6fg"
