@@ -3,6 +3,7 @@ import {StaticMap, _MapContext as MapContext, NavigationControl} from 'react-map
 import DeckGL from '@deck.gl/react';
 import {ScatterplotLayer} from '@deck.gl/layers';
 import elec_data from './geotab.json';
+import Contact from './contact';
 
 const GAS_COLOR = [216, 180, 254]
 const ELECTRIC_COLOR = [134, 239, 172];
@@ -67,10 +68,13 @@ const [initialViewState, setInitialViewState] = useState({
   };
   
   return (
+    <>
     <DeckGL width={width} height={height} layers={layers} initialViewState={initialViewState} controller={true} style={deckStyle} ContextProvider={MapContext.Provider}>
       <StaticMap width={width} height={height} reuseMaps mapStyle={mapStyle} mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
       <NavigationControl />
     </DeckGL>
+  <Contact location={initialViewState} />
+  </>
   );
 }
 export default ScatterMap
